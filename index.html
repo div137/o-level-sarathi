@@ -5,75 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O'Level Sarathi | Official Landing Page</title>
     <style>
-        :root { --primary-color: #1a73e8; --text-color: #3c4043; --bg-color: #f8f9fa; }
-        body { font-family: 'Roboto', Arial, sans-serif; line-height: 1.6; color: var(--text-color); margin: 0; background: var(--bg-color); }
-        .navbar { background: #fff; padding: 15px 10%; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: sticky; top: 0; display: flex; justify-content: space-between; align-items: center; }
-        .hero { text-align: center; padding: 60px 20px; background: linear-gradient(135deg, #1a73e8, #0d47a1); color: white; }
-        .container { max-width: 900px; margin: 30px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-        h2 { color: #1a73e8; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 40px; }
-        .policy-box { margin-bottom: 30px; }
-        .contact-info { background: #e8f0fe; padding: 20px; border-radius: 8px; border-left: 5px solid #1a73e8; }
-        footer { text-align: center; padding: 40px; color: #70757a; font-size: 0.9em; }
-        .btn { background: #fb8c00; color: white; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 20px; }
+        :root { --primary: #1a73e8; --secondary: #0d47a1; }
+        body { font-family: 'Roboto', Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; background: #f4f4f4; }
+        
+        /* Navbar with Policy Links - Razorpay looks for this */
+        .navbar { background: #fff; padding: 10px 5%; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; display: flex; justify-content: space-between; align-items: center; z-index: 1000; }
+        .nav-links a { margin-left: 15px; text-decoration: none; color: #555; font-size: 14px; font-weight: 500; }
+        .nav-links a:hover { color: var(--primary); }
+
+        .hero { text-align: center; padding: 50px 20px; background: linear-gradient(135deg, #1a73e8, #0d47a1); color: white; }
+        .container { max-width: 900px; margin: 20px auto; padding: 20px; background: #fff; border-radius: 8px; }
+        h2 { color: var(--primary); border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
+        .policy-content { font-size: 0.95em; color: #444; }
+        .btn { background: #fb8c00; color: white; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px; }
+        footer { text-align: center; padding: 20px; background: #222; color: #fff; font-size: 0.8em; margin-top: 40px; }
     </style>
 </head>
 <body>
 
 <div class="navbar">
-    <div style="font-size: 24px; font-weight: bold; color: #1a73e8;">O'Level Sarathi</div>
+    <div style="font-size: 20px; font-weight: bold; color: var(--primary);">O'Level Sarathi</div>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#terms">Terms</a>
+        <a href="#refund">Refund</a>
+        <a href="#shipping">Shipping</a>
+    </div>
 </div>
 
 <div class="hero">
-    <h1>O'Level Sarathi - Learning Made Easy</h1>
-    <p>Premium Educational Projects, Source Codes & Notes</p>
-    <a href="https://drive.google.com/file/d/1gmOletxlups1U4n_8xyJAe1PkZkWFPbn/view?usp=drive_link" class="btn">Download Android App</a>
+    <h1>O'Level Sarathi</h1>
+    <p>Premium Projects & Notes for O'Level Students</p>
+    <a href="https://www.amazon.in/Vibhanshu-Yadav-O-level-Sarathi/dp/B0GGHV6D4V" class="btn" target="_blank">View on Amazon Appstore</a>
 </div>
 
 <div class="container">
     
-    <div class="policy-box" id="contact">
+    <section id="about">
+        <h2>About Us</h2>
+        <p>O'Level Sarathi is an educational platform owned by Vibhanshu Yadav. We provide digital study materials, project source codes, and mock tests specifically designed for students pursuing O'Level certifications. Our mission is to simplify learning through high-quality digital resources.</p>
+    </section>
+
+    <section id="contact">
         <h2>Contact Us</h2>
-        <div class="contact-info">
-            <p>For any support or payment related queries, please contact us:</p>
+        <div style="background: #eef2ff; padding: 15px; border-radius: 8px;">
             <p><b>Business Name:</b> O'Level Sarathi</p>
-            <p><b>Email:</b> er.divsir@gmail.com </p>
-            <p><b>Phone:</b> +91-9532595992 </p>
-            <p><b>Address:</b> Prayagraj, Uttar Pradesh, 212107</p>
+            <p><b>Merchant Name:</b> Vibhanshu Yadav</p>
+            <p><b>Email:</b> er.divsir@gmail.com</p>
+            <p><b>Phone:</b> +91-7390088137</p> <p><b>Address:</b> Prayagraj, Uttar Pradesh, 211002</p>
         </div>
-    </div>
+    </section>
 
-    <div class="policy-box">
+    <section id="privacy" class="policy-content">
         <h2>Privacy Policy</h2>
-        <p>At O'Level Sarathi, we prioritize your privacy. We collect minimal information such as your name, email, and phone number during registration/payment to provide access to our digital content. We do not sell or share your personal data with any third-party marketing companies. All payment transactions are securely processed via Razorpay.</p>
-    </div>
+        <p>This privacy policy sets out how O'Level Sarathi uses and protects any information that you give when you use this website/app. We are committed to ensuring that your privacy is protected. We collect your Name, Email, and Phone number only for account creation and payment verification via Razorpay. We do not share your data with third parties.</p>
+    </section>
 
-    <div class="policy-box">
+    <section id="terms" class="policy-content">
         <h2>Terms and Conditions</h2>
-        <p>By using the O'Level Sarathi app, you agree to comply with the following terms:</p>
-        <ul>
-            <li>All content provided is for educational purposes only.</li>
-            <li>Users are prohibited from redistributing, selling, or copying the premium source code or project reports.</li>
-            <li>We reserve the right to terminate access for users found violating our intellectual property rights.</li>
-        </ul>
-    </div>
+        <p>By accessing this app/website, you agree to be bound by these terms. All content (PDFs, Source Code) is for personal educational use only. Unauthorized distribution or resale of our digital content is strictly prohibited. All transactions are in <b>Indian Rupees (INR)</b>.</p>
+    </section>
 
-    <div class="policy-box">
+    <section id="refund" class="policy-content">
         <h2>Cancellation and Refunds</h2>
-        <p><b>Refund Policy:</b> Since we deal in digital products (Source Code, PDF Reports, Notes), we generally do not offer refunds once the purchase is complete and the file has been accessed.</p>
-        <p><b>Exceptions:</b> In case of accidental double payment for the same product, the extra amount will be refunded to the original payment method within 5-7 working days after verification.</p>
-    </div>
+        <p><b>Refunds:</b> Since we provide digital products (Source Code, PDF Notes), we generally do not offer refunds once the purchase is successful and the product is delivered. </p>
+        <p><b>Cancellations:</b> You can cancel your subscription request before the payment is processed. In case of a failed transaction where the amount is deducted but the product is not delivered, we will process a refund within 5-7 working days.</p>
+    </section>
 
-    <div class="policy-box">
+    <section id="shipping" class="policy-content">
         <h2>Shipping and Delivery Policy</h2>
-        <p>O'Level Sarathi provides only <b>Digital Products</b>. No physical shipping is required.</p>
-        <p><b>Delivery Timeline:</b> Upon successful payment confirmation via Razorpay, the digital files (PDF/ZIP) are delivered <b>Instantly</b> through the 'Download' section within the Android application.</p>
-    </div>
+        <p>O'Level Sarathi provides only <b>Digital Goods</b>. No physical shipping is required for any of our products.</p>
+        <p><b>Delivery Timeline:</b> After a successful payment, the digital content is delivered <b>Instantly</b> within the app. You can access your purchased projects in the "My Downloads" or "Premium Section" of the app immediately.</p>
+    </section>
 
 </div>
 
 <footer>
-    <p>&copy; 2024-2026 O'Level Sarathi. All Rights Reserved.</p>
-    <p>Powered by Razorpay Secure Payments</p>
+    <p>&copy; 2026 O'Level Sarathi. All Rights Reserved. | Merchant: Vibhanshu Yadav</p>
+    <p>Secure Payments by Razorpay</p>
 </footer>
 
 </body>
